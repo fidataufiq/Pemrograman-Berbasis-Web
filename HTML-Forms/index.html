@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+       body {
+        background: linear-gradient(45deg,#7C0A02,#F1BC31);
+        height: 100vh;
+        font-family: sans-serif;
+       }
+
+       .container{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top:50%;
+        left: 50%;
+       }
+       form{
+        background: rgba(255, 255,255,0.3);
+        padding: 3em;
+        height: 640px;
+        border-radius: 20px;
+        border-left: 1px solid rgba(255, 255,255,0.3);
+        border-top:1px solid rgba(255, 255,255,0.3);
+        backdrop-filter: blur(10px);
+        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+        position: relative;
+        transition: all 0.2s ease-in-out;
+       }
+
+       p{
+        text-align: center;
+        font-weight: 500;
+        color: #fff;
+        opacity: 0.7;
+        font-size: 1.4rem;
+        margin-top: 0;
+        margin-bottom: 60px;
+        text-shadow: 2px 2px 6px;
+       }
+
+        label{
+            text-decoration: none;
+            color: #ddd;
+            font-size: 14px;
+        }
+
+        input{
+            background: transparent;
+            width: 200px;
+            padding: 1em;
+            margin-bottom: 2em;
+            border: none;
+            border-left: 1px solid rgba(255, 255,255,0.3);
+            border-top: 1px solid rgba(255, 255,255,0.3);
+            border-radius: 4000px;
+            backdrop-filter: blur(5px);
+            box-shadow: 4px 4px 60px  rgba(104, 104, 104, 0.2);
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+            text-shadow: 2px 2px 4px  rgba(0,0,0,0.2);
+        }
+
+        select,option{
+            background: transparent;
+            width: 200px;
+            padding: 1em;
+            margin-bottom: 2em;
+            border: none;
+            border-left: 1px solid rgba(255, 255,255,0.3);
+            border-top: 1px solid rgba(255, 255,255,0.3);
+            border-radius: 4000px;
+            backdrop-filter: blur(5px);
+            box-shadow: 4px 4px 60px  rgba(104, 104, 104, 0.2);
+            color: #1b1b1b;
+            font-family: sans-serif;
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+            text-shadow: 2px 2px 4px  rgba(0,0,0,0.2);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <p>Biodata Mahasiswa</p>
+           
+                <label for="nim">NIM</label><br>
+                <input type="text" id="nim" name="nim" maxlength="12" size="12"><br>
+
+                    <label for="nama">Nama Lengkap</label><br>
+                    <input type="text" id="nama" value=""><br>
+               
+               
+                    <label for="tgl">Tanggal Lahir</label><br>
+                    <input type="date" id="tgl" name="tgl"><br>
+               
+                    <label for="alamat">Alamat</label><br>
+                    <input type="text" id="alamat" name="alamat"><br>
+              
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email"><br>
+              
+                    <label for="prodi">Program Studi</label><br>
+                    <select name="prodi" id="prodi">
+                            <option value="sistem informasi">Sistem Informasi</option>
+                            <option value="teknik industri">Teknik Industri</option>
+                            <option value="teknik informatika">Teknik Informatika</option>
+                            <option value="teknik elektro">Teknik Elektro</option>
+                            <option value="teknik mesin">Teknik Elektro</option>
+                            <option value="teknik mekatronik">Teknik Elektro</option>
+                    </select> <br>
+                    <input type="submit"> 
+        </form>
+    </div>
+</body>
+</html>
